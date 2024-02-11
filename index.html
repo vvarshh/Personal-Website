@@ -18,8 +18,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -35,8 +35,8 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -116,7 +116,7 @@ In my free time, I also find joy in hitting the gym or expressing myself through
       />
     </section>
 
-    <section id="experience">
+    <section-me id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experiences</h1>
 
@@ -169,107 +169,35 @@ In my free time, I also find joy in hitting the gym or expressing myself through
     />
 
     </section>
-
-    <section id="skills">
+    <section-small id="skills">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <div class="article-container">
-              <article>
-                <div>
-                  <img
-                  src="./assets/python.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-              <article>
-                <div>
-                  <img
-                  src="./assets/java.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-              <article>
-                <div>
-                  <img
-                  src="./assets/firebase.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-              <article>
-                <div>
-                  <img
-                  src="./assets/tableau.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-              <article>
-                <div>
-                  <img
-                  src="./assets/excel.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-              <article>
-                <div>
-                  <img
-                  src="./assets/js.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-              <article>
-                <div>
-                  <img
-                  src="./assets/html.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-              <article>
-                <div>
-                  <img
-                  src="./assets/sql.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-              <article>
-                <div>
-                  <img
-                  src="./assets/rstudio.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-              <article>
-                <div>
-                  <img
-                  src="./assets/react.png" 
-                  alt="Python Logo"
-                  class="icon2"
-                />
-                </div>
-              </article>
-            </div>
-          </div>
-          
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="./assets/excel.png" />
+          <img src="./assets/python.png" />
+          <img src="./assets/firebase.png" />
+          <img src="./assets/java.png" />
+          <img src="./assets/html.png" />
+          <img src="./assets/js.png" />
+          <img src="./assets/sql.png" />
+          <img src="./assets/tableau.png" />
+          <img src="./assets/react.png" />
+          <img src="./assets/rstudio.png" />
+        </div>
+  
+        <div class="logos-slide">
+          <img src="./assets/excel.png" />
+          <img src="./assets/python.png" />
+          <img src="./assets/firebase.png" />
+          <img src="./assets/java.png" />
+          <img src="./assets/html.png" />
+          <img src="./assets/js.png" />
+          <img src="./assets/sql.png" />
+          <img src="./assets/tableau.png" />
+          <img src="./assets/react.png" />
+          <img src="./assets/rstudio.png" /> 
+        </div>
       </div>
       <img
         src="./assets/arrow.png"
@@ -277,7 +205,7 @@ In my free time, I also find joy in hitting the gym or expressing myself through
         class="icon arrow"
         onclick="location.href='./#projects'"
       />
-    </section>)
+    </section-small>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -329,7 +257,8 @@ In my free time, I also find joy in hitting the gym or expressing myself through
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="contact">
+    <section-small id="contact">
+     
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -350,7 +279,7 @@ In my free time, I also find joy in hitting the gym or expressing myself through
           <p><a href="https://www.linkedin.com/in/varsharamkumar">LinkedIn</a></p>
         </div>
       </div>
-    </section>
+    </section-small>
     <footer>
       <nav>
         <div class="nav-links-container">
