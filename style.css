@@ -237,6 +237,12 @@ section {
   height: 2rem;
 }
 
+.icon2 {
+  cursor: pointer;
+  height: 4rem;
+}
+
+
 .larger-icon { 
   width: 80px; 
   height: 80px; 
@@ -299,8 +305,10 @@ section {
 /* ABOUT SECTION */
 
 #about {
-  position: relative;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .about-containers {
   gap: 2rem;
@@ -341,12 +349,17 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
+  justify-content: center;
 }
 
 .section__pic-container {
   height: 400px;
   width: 400px;
-  margin: auto 0;
+
+}
+
+.text-container {
+  max-width: 600px;
 }
 
 /* EXPERIENCE SECTION */
@@ -374,7 +387,7 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 article {
@@ -403,6 +416,7 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  
 }
 
 .project-title {
@@ -465,3 +479,4 @@ footer {
 footer p {
   text-align: center;
 }
+
