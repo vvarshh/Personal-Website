@@ -492,6 +492,11 @@ section-medium {
   opacity: 1;
 }
 
+.animate {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
 @keyframes movedown {
   0% {
     transform: translateY(-30px);
