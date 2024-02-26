@@ -108,19 +108,108 @@ In my free time, I also find joy in hitting the gym or expressing myself through
         </div>
       </div>
       
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
 
-    <section-me id="experience">
+    <section id="experience">
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Get the "Experience" section
+          const experienceSection = document.getElementById("experience");
+        
+          // Get the elements you want to animate
+          const animatedElements = document.querySelectorAll(".animated");
+        
+          // Function to check if an element is in the viewport
+          function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+          }
+        
+          // Function to handle scroll events
+          function handleScroll() {
+            animatedElements.forEach((el) => {
+              if (isElementInViewport(el)) {
+                el.classList.add("animate");
+              }
+            });
+          }
+        
+          // Attach the handleScroll function to the scroll event
+          window.addEventListener("scroll", handleScroll);
+        
+          // Initial check when the page loads
+          handleScroll();
+        });
+        </script>
+
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experiences</h1>
 
-      <div class="about-details-container">
+      <div class ="timeline">
+
+        <div class ="container left-container animated">
+          <img src="./assets/icon1.png" alt="Icon 1"/>
+          <div class ="text-box">
+            <h2> Temasek Life Sciences Lab</h2>
+            <small> Data and Research Intern | Jan 2021 - June 2021</small>
+            <p> Automated a robotic fluid handling system to enable the repeatable & consistent execution of pipetting operations
+              Awarded Gold at Singapore Science and Engineering Fair 2020 (SSEF) with findings published as a paper</p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+
+        <div class ="container right-container animated">
+          <img src="./assets/grantthornton.png" alt="Icon 2"/>
+          <div class ="text-box">
+            <h2> Grant Thornton </h2>
+            <small> Audit Intern | Jan 2021 - June 2021</small>
+            <p> Executed and delivered high quality statutory audits to 20 clients while managing them independently. Analysed and prepared audit documentation for corporate governance and financial reporting in accordance with
+              applicable regulatory frameworks </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+
+        <div class ="container left-container animated">
+          <img src="./assets/icon2.png" alt="Icon 2"/>
+          <div class ="text-box">
+            <h2> Prime Ministers Office PSD </h2>
+            <small> Data Analytics Intern | Sep 2022 - Nov 2022</small>
+            <p>  Accelerate data analysis to pinpoint usage breakpoints in Workday software across multiple Statutory Boards.
+              Expanded to develop, build & grow depth and ultimately improve user experience
+          Information was visualised using Tableau and Excel.</p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+
+        <div class ="container right-container animated">
+          <img src="./assets/icon3.png" alt="Icon 3"/>
+          <div class ="text-box">
+            <h2> Knowron GmBh </h2>
+            <small> Software Engineering Intern | July 2023 - Dec 2023</small>
+            <p> Worked at a German startup as part of NUS Overseas Colleges
+              Achieved significant contributions to frontend development, coupled with a proactive involvement in backend
+              testing. Conducted comprehensive testing across the entire database, resulting in 60% code coverage.
+              </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+
+      </div>
+
+      <!-- <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
             <img
@@ -158,18 +247,14 @@ In my free time, I also find joy in hitting the gym or expressing myself through
             <p>NUS High Diploma<br /><strong>Y3 NUS Business Analytics (Honours)</strong></p>
 
           </div>
-        </div>
+        </div> -->
 
 
-      <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#skills'"
-    />
+    
 
     </section>
-    <section-small id="skills">
+
+    <section id="skills">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
       <div class="logos">
@@ -199,13 +284,10 @@ In my free time, I also find joy in hitting the gym or expressing myself through
           <img src="./assets/rstudio.png" /> 
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section-small>
+    
+    </section>
+
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -238,7 +320,7 @@ In my free time, I also find joy in hitting the gym or expressing myself through
           
           <div class="details-container color-container">
             <div class="article-container">
-              <a href="https://your-link-here.com" target="_blank">
+              <a href="https://github.com/vvarshh/moviesGalore" target="_blank">
                 <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
               </a> 
             </div>
@@ -250,13 +332,9 @@ In my free time, I also find joy in hitting the gym or expressing myself through
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+  
     </section>
+
     <section-small id="contact">
      
       <p class="section__text__p1">Get in Touch</p>
@@ -286,6 +364,7 @@ In my free time, I also find joy in hitting the gym or expressing myself through
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
