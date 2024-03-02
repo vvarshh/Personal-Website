@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 
-
-    
-   
   </head>
   <body>
     <nav id="desktop-nav">
@@ -97,6 +94,8 @@
         
         <div class="text-container">
             <h1 ><strong>Current Y3 Business Analytics (Honours) Undergraduate at NUS School of Computing </strong></h1>
+            </br>
+            </br>
             <p>
               I am deeply passionate about data analytics, driven by the transformation of raw data into meaningful insights. Through diverse internship experiences, I've honed analytical skills, accelerated data analysis, and automated processes, fostering a commitment to unraveling hidden stories within data for informed decision-making and innovative solutions.
 
@@ -111,53 +110,6 @@ In my free time, I also find joy in hitting the gym or expressing myself through
     </section>
 
     <section id="experience">
-
-      <script>
-      document.addEventListener("DOMContentLoaded", function () {
-      const experienceSection = document.getElementById("experience");
-      const timelineAfterElement = document.querySelector(".timeline::after");
-      const containerElement = document.querySelector(".container");
-
-      function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
-
-      function handleScroll() {
-        if (isElementInViewport(experienceSection)) {
-          timelineAfterElement.style.animation = "moveline 6s linear forwards";
-          containerElement.style.animation = "movedown 1s linear forwards";
-          containerElement.style.opacity = "1";
-        } else {
-          timelineAfterElement.style.animation = "none";
-          containerElement.style.animation = "none";
-          containerElement.style.opacity = "0";
-        }
-      }
-
-      window.addEventListener("scroll", handleScroll);
-
-      function handleLinkClick(event) {
-        event.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-        const targetSection = document.getElementById(targetId);
-
-        handleScroll(); // Trigger animations for the new section
-      }
-
-      const links = document.querySelectorAll('a[href^="#experience"]');
-      links.forEach((link) => {
-        link.addEventListener("click", handleLinkClick);
-      });
-    });
-        </script>
-
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experiences</h1>
 
@@ -170,7 +122,6 @@ In my free time, I also find joy in hitting the gym or expressing myself through
             <small> Data and Research Intern | Jan 2021 - June 2021</small>
             <p> Automated a robotic fluid handling system to enable the repeatable & consistent execution of pipetting operations
               Awarded Gold at Singapore Science and Engineering Fair 2020 (SSEF) with findings published as a paper</p>
-            <span class="left-container-arrow"></span>
           </div>
         </div>
 
@@ -209,13 +160,6 @@ In my free time, I also find joy in hitting the gym or expressing myself through
             <span class="right-container-arrow"></span>
           </div>
         </div>
-        <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#skills'"
-      />
-
       </div>
 
       <!-- <div class="about-details-container">

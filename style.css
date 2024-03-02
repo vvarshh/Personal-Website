@@ -177,7 +177,10 @@ section-medium {
 } 
 
 .section-container {
-  display: flex;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
 }
 
 /* PROFILE SECTION */
@@ -378,6 +381,7 @@ section-medium {
 
 .text-container {
   max-width: 600px;
+  justify-items: center;
 }
 
 /* EXPERIENCE SECTION */
@@ -398,6 +402,7 @@ section-medium {
 
 .timeline { 
   position:relative; 
+  z-index: 1;
   max-width: 1200px;
   margin: 100px auto;
 }
@@ -475,7 +480,7 @@ section-medium {
   top:0; 
   left: 50%; 
   margin-left: -3px; 
-  z-index: 0; 
+  z-index: -100; 
   animation: moveline 6s linear forwards; 
 }
  @keyframes moveline { 
