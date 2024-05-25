@@ -1,3 +1,24 @@
+// Toggle Hamburger Menu
+function toggleMenu() {
+  const menuLinks = document.querySelector(".menu-links");
+  const hamburgerIcon = document.querySelector(".hamburger-icon");
+
+  menuLinks.classList.toggle("open");
+  hamburgerIcon.classList.toggle("open");
+}
+
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
+// Load content for each section
 function loadContent(sectionId, htmlFilePath) {
   const section = document.getElementById(sectionId);
 
@@ -22,7 +43,6 @@ function loadContent(sectionId, htmlFilePath) {
   xhr.send();
 }
 
-// Load content for each section
 loadContent("about", "about.html");
 loadContent("experience", "experience.html");
 loadContent("skills", "skills.html");

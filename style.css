@@ -748,3 +748,52 @@ footer p {
   height: 100px;
   margin: 0 40px;
 }
+
+
+/* Ensure each section has enough height */
+section, section-small, section-medium {
+  padding-top: 4vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+/* Specific heights for different sections */
+section {
+  height: auto; /* Change to auto to allow content to define height */
+}
+
+section-small {
+  height: auto; /* Change to auto to allow content to define height */
+}
+
+section-medium {
+  height: auto; /* Change to auto to allow content to define height */
+}
+
+/* Adding margin to separate sections */
+#experience {
+  margin-bottom: 50px; /* Adjust as needed */
+}
+
+#skills {
+  margin-top: 50px; /* Adjust as needed */
+  margin-bottom: 50px; /* Add bottom margin to avoid overlap with next section */
+}
+
+#projects {
+  margin-top: 50px; /* Adjust as needed */
+}
+
+/* Ensure logos section doesn't overlap */
+.logos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Additional styling to prevent overlapping */
+#about, #experience, #skills, #projects, #contact {
+  padding: 20px; /* Add padding to each section for better spacing */
+}
+
+
